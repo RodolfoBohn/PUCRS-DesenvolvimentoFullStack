@@ -1,0 +1,12 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "description": "Prática realizada com os conceitos apresentados em aula, como herança, abstração, polimorfismo e encapsulamento, getters, setters, entre outros.\r Utilizados módulos javascript com node.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodolfo Bohn",
+  "license": "ISC"
+}
