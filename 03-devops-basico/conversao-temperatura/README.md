@@ -21,4 +21,12 @@ Comando para criar um container com a imagem:
   
 ```
 
+Comando para subir a imagem no repositório docker
+```
+  docker push nomeDaImagem
+  docker push rodolfobohn/aula-conversao-temperatura:v1
+  docker push rodolfobohn/aula-conversao-temperatura:latest
+  
+```
+
 .dockerignore: arquivo para dizer quais aquivos/diretórios o Dockerfile deve ignorar na criação da imagem no comando copy
