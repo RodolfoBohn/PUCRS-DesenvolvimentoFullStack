@@ -41,8 +41,8 @@ jobs:
        - name: Build and push Docker image
          uses: docker/build-push-action@v6.15.0
          with: 
-           context: ./src
-           file: ./Dockerfile
+           context: /src
+           file: Dockerfile
            tags: |
              rodolfobohn/aula-conversao-temperatura:v1
              rodolfobohn/aula-conversao-temperatura:latest
