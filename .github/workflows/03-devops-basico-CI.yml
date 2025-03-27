@@ -6,11 +6,11 @@ on:
     
 
 jobs:
-  build:
+  CI:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./03-devops-basico/conversao-temperatura/src
+        working-directory: ./03-devops-basico/conversao-temperatura
 
     steps:
        - uses: actions/checkout@v4.2.2
@@ -22,3 +22,16 @@ jobs:
          uses: actions/setup-node@v4.3.0
          with:
            node-version: 18.18.0
+
+       - name: Setup Mocha for tests and install dependencies
+         run: |
+           cd src
+           npm install -g mocha
+           npm install
+
+       - name: Run tests
+         run: mocha src/tests/convert.js 
+       
+
+
+
