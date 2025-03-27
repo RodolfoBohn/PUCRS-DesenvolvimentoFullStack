@@ -30,7 +30,7 @@ jobs:
            npm install
 
        - name: Run tests
-         run: mocha src/tests/convert.js 
+         run: mocha src/test/convert.js 
        
 
 
