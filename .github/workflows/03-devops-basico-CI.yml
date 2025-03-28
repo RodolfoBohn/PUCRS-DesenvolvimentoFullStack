@@ -41,14 +41,13 @@ jobs:
        - name: Run ls
          run: ls
 
-       # - name: Build and push Docker image
-       #   uses: docker/build-push-action@v6.15.0
-       #   with: 
-       #     context: ./src
-       #     file: ./Dockerfile
-       #     tags: |
-       #       rodolfobohn/aula-conversao-temperatura:v1
-       #       rodolfobohn/aula-conversao-temperatura:latest
+       - name: Build and push Docker image
+         uses: docker/build-push-action@v6.15.0
+         with: 
+           file: ./Dockerfile
+           tags: |
+             rodolfobohn/aula-conversao-temperatura:v1
+             rodolfobohn/aula-conversao-temperatura:latest
        
 
 
